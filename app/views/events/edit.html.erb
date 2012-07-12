@@ -1,0 +1,10 @@
+<div class="subnav">
+	<ul class="nav nav-pills">
+		<li><%= link_to 'View This Event', @event %></li>
+		<li><%= link_to 'Show All Events', events_path %></li>
+		<li><%= link_to raw("<span>View Calendar</span>"), calhome_path %></li>
+	</ul>
+</div>
+<h3>Editing event</h3>
+
+<%= render 'form' %>

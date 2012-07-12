@@ -1,0 +1,19 @@
+<%= form_for(@event) do |f| %>
+  <%= render 'shared/error_messages', object: @event %>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+
+    <%= f.label :starts_at %><br />
+    <%= f.datetime_select :starts_at %>
+
+    <%= f.label :ends_at %><br />
+    <%= f.datetime_select :ends_at %>
+
+    <%= f.label :all_day %><br />
+    <%= f.check_box :all_day %>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %><br/>
+
+	<%= f.submit "Create Event", class: "btn btn-small btn-primary" %>
+  </div>
+<% end %>

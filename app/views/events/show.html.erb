@@ -1,0 +1,33 @@
+<div class="subnav">
+	<ul class="nav nav-pills">
+		<li><%= link_to 'Edit this Event', edit_event_path(@event) %></li>
+		<li><%= link_to 'Show All Events', events_path %></li>
+		<li><%= link_to raw("<span>View Calendar</span>"), calhome_path %></li>
+	</ul>
+</div>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @event.title %>
+</p>
+
+<p>
+  <b>Starts at:</b>
+  <%= @event.starts_at %>
+</p>
+
+<p>
+  <b>Ends at:</b>
+  <%= @event.ends_at %>
+</p>
+
+<p>
+  <b>All day:</b>
+  <%= @event.all_day %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @event.description %>
+</p>

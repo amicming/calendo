@@ -1,0 +1,8 @@
+<br/><br/><br/>
+<p align="center">
+	<% if logged_in? %>
+		Hello <%= current_user.name %>!!!<br/>You are logged in!
+	<% else %>
+		New User? <%= link_to "Sign up now!", signup_path, class: "btn btn-mini btn-primary" %>
+	<% end %>
+</p>
